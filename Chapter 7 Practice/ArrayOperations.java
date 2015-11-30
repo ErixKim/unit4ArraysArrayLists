@@ -7,15 +7,15 @@ public class ArrayOperations
         System.out.println(x[0]);
         System.out.println(x[8]);
         System.out.println(x[x.length-1]);
-        for (int i = 0; i < 9; i++)
+        for (int i = 0; i < x.length; i++)
         {
             System.out.println(x[i]);
         }
-        for (int i = 0; i < 9; i++)
+        for (int i = 0; i < x.length; i++)
         {
             System.out.println("x: " + x[i]);
         }
-        for (int i = 8; i >= 0; i--)
+        for (int i = x.length - 1; i >= 0; i--)
         {
             System.out.println("x: " + x[i]);
         }
