@@ -34,7 +34,8 @@ public class Radar
     public Radar(int rows, int cols)
     {
         // initialize the currentScan 2D array and the accumulator 2D array
-        
+        boolean[][] currentScan = new boolean[rows][cols];
+        int[][] accumulator = new int[rows][cols];
         
         //
         // !!! add code here !!!
@@ -63,10 +64,16 @@ public class Radar
         //    4. update the accumulator 2D array based on the state of the currentScan 2D array
         //    5. increment the numScans instance variable
         
-        
         //
         // !!! add code here !!!
         //
+        for (int i = 0; i < currentScan.length; i ++)
+        {
+            for (int j = 0; j < currentScan[i].length; j++)
+            {
+                currentScan[i][j] = false;
+            }
+        }
         
         
     }
