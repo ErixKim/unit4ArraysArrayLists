@@ -19,6 +19,14 @@ public class RadarViewer
         final int COLS = 100;
         Radar radar = new Radar(ROWS, COLS);
         radar.setNoiseFraction(0.10);
+        
+        Scanner scan = new Scanner(System.in);
+        System.out.println("What's the monster's row");
+        int monsterLocationRow = scan.nextInt();
+        System.out.println("What's the monster's column");
+        int monsterLocationColumn = scan.nextInt();
+        
+        radar.setMonsterLocation(monsterLocationRow, monsterLocationColumn);
         radar.scan();
         
         JFrame frame = new JFrame();
