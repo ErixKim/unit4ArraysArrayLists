@@ -8,8 +8,8 @@ import javax.swing.JComponent;
 /**
  * Class that is responsible for rendering the current radar scan image and the accumulated radar image.
  * 
- * @author @gcschmit
- * @version 19 July 2014
+ * @author @Eric Kim
+ * @version 14 December 2015
  */
 public class RadarComponent extends JComponent
 {
